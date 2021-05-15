@@ -37,7 +37,7 @@ q = 20
 
 ```python
 #Compute Initial Potts Clusters as a first Random Partition (with Potts Model)
-InitialPottsClusters = PCS.InitialPottsConfiguration(Train_PottsData_demo, q, Kernel="Mercel")
+InitialPottsClusters = PCS.InitialPottsConfiguration(Train_PottsData_demo, q, Kernel="Mercer")
 ```
 
 
@@ -60,7 +60,7 @@ MinClusterSize = 5
 
 #Run your Potts Complete Shrinkage Model to simulate the Randomly Shrunk Potts Partitions. Partitions_Sets is a dictionary that can be saved 
 #with pickle package.
-Partitions_Sets,Spin_Configuration_Sets = PCS.Potts_Random_Partition (Train_PottsData_demo, T, sigma, Number_of_Random_Partitions, MinClusterSize, Initial_Partition,  Kernel="Mercel")
+Partitions_Sets,Spin_Configuration_Sets = PCS.Potts_Random_Partition (Train_PottsData_demo, T, sigma, Number_of_Random_Partitions, MinClusterSize, Initial_Partition,  Kernel="Mercer")
 ```
 
     We are at step: 1
